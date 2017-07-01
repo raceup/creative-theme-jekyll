@@ -1,14 +1,21 @@
-# Creative Theme for Jekyll
+# Race UP Personalize
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+*Personalize your Race UP Electric car*
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://opensource.org/licenses/Apache-2.0) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/sirfoga/scrapebots/issues) [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
 
-## To use the Creative Theme template in your project
+## Install
+Just clone this repository, run ```jekyll serve``` and open a browser [here](http://127.0.0.1:4000/)
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
 
+## Questions and issues
+The [github issue tracker](https://github.com/raceup/rup/issues) is **only** for bug reports and feature requests. Anything else, such as questions for help in using the library, should be posted as [pull requests](https://github.com/sirfoga/scrapebots/pulls).
+
+
+## Contributing
+[Fork](https://github.com/raceup/rup.git) --> Patch --> Push --> [Pull request](https://github.com/raceup/rup/pulls)
+
+
+## License
+[Apache License](http://www.apache.org/licenses/LICENSE-2.0) Version 2.0, January 2004

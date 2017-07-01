@@ -81,33 +81,35 @@ aside {
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($theme-primary, 100%);
         }
     }
+
     .nav {
-        > li {
-            > a,
-            > a:focus {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 13px;
-                color: $theme-dark;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-            &.active {
+            > li {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
-                    background-color: transparent;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 13px;
+                    color: $theme-dark;
                     &:hover {
-                        background-color: transparent;
+                        color: $theme-primary;
+                    }
+                }
+                &.active {
+                    > a,
+                    > a:focus {
+                        color: $theme-primary !important;
+                        background-color: black;
+                        &:hover {
+                            background-color: black;
+                        }
                     }
                 }
             }
         }
-    }
+    
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba(white, .3);
@@ -120,7 +122,7 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
                 color: white;
             }
