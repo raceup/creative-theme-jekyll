@@ -14,7 +14,7 @@ The [github issue tracker](https://github.com/raceup/rup/issues) is **only** for
 
 
 ## Contributing
-[Fork](https://github.com/raceup/rup.git/fork) --> Patch --> Push --> [Pull request](https://github.com/raceup/rup/pulls)
+[Fork](https://github.com/raceup/rup/fork) --> Patch --> Push --> [Pull request](https://github.com/raceup/rup/pulls)
 
 
 ## License

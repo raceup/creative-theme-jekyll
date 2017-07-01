@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - index and app pages
 - new theme settings
+- setImageWithColors js method
 
 ### Fixed
 - gitignore
