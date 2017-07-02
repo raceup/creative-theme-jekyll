@@ -15,12 +15,14 @@
         <link href="css/material-wfont.min.css" rel="stylesheet">
         <link href="css/ripples.min.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
+        
+        <!-- custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
 
         <!-- Font Awesome -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
@@ -62,36 +64,51 @@
             </div>
         </header>
 
-        <article>
-            <div class="container col-lg-6 col-md-6">
-              <img id="image-canvas" src="img/choices/bcc.png">
-            </div>
+        <!-- main content -->
+        <article style="padding-top: 6em;">
+            <section align="center">
+                <!-- where car is seen -->
+                <div class="container">
+                  <img align="middle" id="image-canvas" src="img/choices/bcc.png" width="50%" height="auto">
+                </div>
 
-            <div class="container row text-center">
-                <div class="col-lg-4 frame-wrapper picker-wrapper">
-                    <button class="btn btn-default">Select frame color</button>
-                    <div class="frame-color-picker color-picker">
+                <!-- where colors are chosen -->
+                <div class="container" style="padding-top: 2em;">
+                    <div class="col-lg-4 text-left frame-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select frame color</button>
+                        <div class="frame-color-picker color-picker"></div>
                     </div>
-                  </div>
 
-                  <div class="col-lg-4 aero-wrapper picker-wrapper">
-                      <button class="btn btn-default">Select aero color</button>
-                      <div class="aero-color-picker color-picker">
-                      </div>
-                  </div>
+                    <div class="col-lg-4 text-center aero-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select aerodynamics color</button>
+                        <div class="aero-color-picker color-picker"></div>
+                    </div>
 
-                  <div class="col-lg-4 stickers-wrapper picker-wrapper">
-                      <button class="btn btn-default">Select stickers color</button>
-                      <div class="stickers-color-picker color-picker">
-                      </div>
-                  </div>
-            </div>
+                    <div class="col-lg-4 text-right stickers-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select stickers color</button>
+                        <div class="stickers-color-picker color-picker"></div>
+                    </div>
+                </div>
+            </section>
         </article>
         
         <footer>
             <div class="container">
                 <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
             </div>
+
+            <ul class="icons" style="padding-top: 2em;">
+                <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
+                <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
+                <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
+                <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://bitbucket.org/raceuped" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+                <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="{{ site.baseurl }}/feed.xml" class="icon circle fa-rss"><span class="label">RSS</span></a></li>
+            </ul>
         </footer>
     </body>
 </html>
