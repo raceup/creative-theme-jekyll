@@ -1,18 +1,9 @@
+/**
+ * TODO: handle errors
+*/
 function setImageWithColors(frameColor, aeroColor, stickersColor) {
 	imageUrl = getPathImageWithColors(frameColor, aeroColor, stickersColor);
 	document.getElementById("image-canvas").src = imageUrl;
-
-	/*$.ajax({
-	    url: imageUrl,
-	    error: function()
-	    {
-	        alert("Ooops! Color not found!");
-	    },
-	    success: function()
-	    {
-	        document.getElementById("image-canvas").src = imageUrl;
-	    }
-	});*/
 }
 
 function getPathImageWithColors(frameColor, aeroColor, stickersColor) {
@@ -20,5 +11,5 @@ function getPathImageWithColors(frameColor, aeroColor, stickersColor) {
 	fileName += ".png";
 	basePathImages = "img/choices/";
 	
-	return basePathImages + fileName  // TODO: handle errors
+	return basePathImages + fileName
 }

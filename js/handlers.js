@@ -18,9 +18,9 @@ var stickersColors = {
     "#797279": "carbon",
 };
 
-var frameColorChoice = "b";
-var aeroColorChoice = "c";
-var stickersColorChoice = "c";
+var frameColor = "b";
+var aeroColor = "c";
+var stickersColor = "c";
 
 window.addEventListener("load", function () {
     var pkFrame = new Piklor(".frame-color-picker",
@@ -31,8 +31,8 @@ window.addEventListener("load", function () {
     );
 
     pkFrame.colorChosen(function (col) {
-        frameColorChoice = frameColors[col];
-        setImageWithColors(frameColorChoice, aeroColorChoice, stickersColorChoice);
+        frameColor = frameColors[col];
+        setImageWithColors(frameColor, aeroColor, stickersColor);
     });
 
   var pkAero = new Piklor(".aero-color-picker",
@@ -43,8 +43,8 @@ window.addEventListener("load", function () {
     );
 
     pkAero.colorChosen(function (col) {
-        aeroColorChoice = aeroColors[col];
-        setImageWithColors(frameColorChoice, aeroColorChoice, stickersColorChoice);
+        aeroColor = aeroColors[col];
+        setImageWithColors(frameColor, aeroColor, stickersColor);
     });
 
   var pkStickers = new Piklor(".stickers-color-picker",
@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
     );
 
     pkStickers.colorChosen(function (col) {
-        stickersColorChoice = stickersColors[col];
-        setImageWithColors(frameColorChoice, aeroColorChoice, stickersColorChoice);
+        stickersColor = stickersColors[col];
+        setImageWithColors(frameColor, aeroColor, stickersColor);
     });
 });
