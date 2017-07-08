@@ -1,71 +1,107 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Race UP | Electric Division</title>
+  <head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Race UP Electric Division</title>
 
-        <!-- Mobile support -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/personalize.css">
 
-        <!-- Twitter Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <!-- Material Design for Bootstrap -->
-        <link href="css/material-wfont.min.css" rel="stylesheet">
-        <link href="css/ripples.min.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
-        
-        <!-- custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!-- Font Awesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+    <!-- app -->
+    <script src="js/piklor.js"></script>
+    <script src="js/handlers.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
+    <!-- icon -->
+    <link rel="icon" type="image/png" href="logo.png">
+  </head>
 
-        <!-- color picker -->
-        <script src="js/piklor.js"></script>
+    <body id="page-top">
+        <div class="container text-left" style="padding-top: 6em;">
+            <!-- title -->
+            <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
+            
+            <!-- header -->
+            <p>Buy now an Origin-e and personalize your choice!</p>
+            <a class="btn btn-default" href="https://raceup.github.io/">
+                <i class="fa fa-globe"></i> Team webpage
+            </a>
+            <a class="btn btn-default" href="https://github.com/raceup/rup/">
+                <i class="fa fa-github"></i> View on GitHub
+            </a>
+            <a class="btn btn-default" href="https://raceup.github.io/contact.html">
+                <i class="fa fa-question-circle"></i> Want to know more?
+            </a>
+        </div>
 
-        <!-- app -->
-        <script src="js/handlers.js"></script>
-        <script src="js/main.js"></script>
+        <!-- nav -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-        <!-- icon -->
-        <link rel="icon" type="image/png" href="logo.png">
-    </head>
-
-    <body>
-        <!-- Github fork ribbon -->
-        <a href="https://github.com/raceup/rup/">
-            <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png">
-        </a>
-
-        <header>
-            <div class="container text-left">
-                <!-- title -->
-                <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
-                
-                <!-- header -->
-                <p>Buy now an Origin-e and personalize your choice!</p>
-                <a class="btn btn-default" href="https://raceup.github.io/">
-                    <i class="fa fa-globe"></i> Team webpage
-                </a>
-                <a class="btn btn-default" href="https://github.com/raceup/rup/">
-                    <i class="fa fa-github"></i> View on GitHub
-                </a>
-                <a class="btn btn-default" href="https://raceup.github.io/contact.html">
-                    <i class="fa fa-question-circle"></i> Want to know more?
-                </a>
+                <!-- Navigation menu -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item dropdown dropdown-submenu">
+                                    <li><a href="mission.html">Mission</a></li>
+                                    <li><a href="vision.html">Vision</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item dropdown dropdown-submenu">
+                                    <li><a href="data.html">Data sheet</a></li>
+                                    <li><a href="personalize.html">Personalize</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="menu-item dropdown dropdown-submenu">
+                                    <li><a href="track-lap.html">Track lap</a></li>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">News</a></li>
+                        <li><a href="app.html">App</a></li>
+                    </ul>
+                </div>
             </div>
-        </header>
+        </nav>
 
         <!-- main content -->
         <article style="padding-top: 6em;">
@@ -95,6 +131,7 @@
             </section>
         </article>
         
+        <!-- footer -->
         <footer>
             <div class="container">
                 <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
