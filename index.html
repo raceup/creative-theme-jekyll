@@ -1,117 +1,196 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Race UP | Electric Division</title>
+  <head>
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Mobile support -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Race UP Electric Division</title>
 
-        <!-- Twitter Bootstrap -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-        <!-- Material Design for Bootstrap -->
-        <link href="css/material-wfont.min.css" rel="stylesheet">
-        <link href="css/ripples.min.css" rel="stylesheet">
-        <link href="css/custom.css" rel="stylesheet">
-        
-        <!-- custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
-        <!-- Font Awesome -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-        <!-- Plugin JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <!-- color picker -->
-        <script src="js/piklor.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        <!-- app -->
-        <script src="js/handlers.js"></script>
-        <script src="js/main.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-        <!-- icon -->
-        <link rel="icon" type="image/png" href="logo.png">
-    </head>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
 
-    <body>
-        <!-- Github fork ribbon -->
-        <a href="https://github.com/raceup/rup/">
-            <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png">
-        </a>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+  </head>
 
-        <header>
-            <div class="container text-left">
-                <!-- title -->
-                <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
-                
-                <!-- header -->
-                <p>Buy now an Origin-e and personalize your choice!</p>
-                <a class="btn btn-default" href="https://raceup.github.io/">
-                    <i class="fa fa-globe"></i> Team webpage
-                </a>
-                <a class="btn btn-default" href="https://github.com/raceup/rup/">
-                    <i class="fa fa-github"></i> View on GitHub
-                </a>
-                <a class="btn btn-default" href="https://raceup.github.io/contact.html">
-                    <i class="fa fa-question-circle"></i> Want to know more?
-                </a>
-            </div>
-        </header>
+  <body id="page-top">
+    <!-- nav -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-        <!-- main content -->
-        <article style="padding-top: 6em;">
-            <section align="center">
-                <!-- where car is seen -->
-                <div class="container">
-                  <img align="middle" id="image-canvas" src="img/choices/bcc.png" width="50%" height="auto">
-                </div>
-
-                <!-- where colors are chosen -->
-                <div class="container" style="padding-top: 2em;">
-                    <div class="col-lg-4 frame-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select frame color</button>
-                        <div class="frame-color-picker color-picker"></div>
-                    </div>
-
-                    <div class="col-lg-4 aero-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select aerodynamics color</button>
-                        <div class="aero-color-picker color-picker"></div>
-                    </div>
-
-                    <div class="col-lg-4 stickers-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select stickers color</button>
-                        <div class="stickers-color-picker color-picker"></div>
-                    </div>
-                </div>
-            </section>
-        </article>
-        
-        <footer>
-            <div class="container">
-                <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
-            </div>
-
-            <ul class="icons" style="padding-top: 2em;">
-                <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
-                <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
-                <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
-                <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
-                <li><a href="https://bitbucket.org/raceuped" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
-                <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
-                <li><a href="{{ site.baseurl }}/feed.xml" class="icon circle fa-rss"><span class="label">RSS</span></a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/app.html">App</a></li>
             </ul>
-        </footer>
-    </body>
+        </div>
+    </div>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Race UP | Electric Division</h1>
+                <hr>
+                <p>Buy now an Origin-e and personalize your choice!</p>
+                <a href="/app.html" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- call-to-action -->
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Try our new app!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Go check it out!</p>
+                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">At Your Service</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>#noarcancello</h3>
+                        <p class="text-muted">Better than a cancello.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>15 + 18</h3>
+                        <p class="text-muted">If you now what I mean ...</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Great charge</h3>
+                        <p class="text-muted">... and tension</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Made with love</h3>
+                        <p class="text-muted">and engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Follow us here!</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-lg-offset-2 text-center">
+                <a href="https://twitter.com/RaceUpTeam">
+                    <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>RaceUpTeam</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1 text-center">
+                <a href="mailto:info@raceup.it">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>info@raceup.it</p>
+                </a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1 text-center">
+                <a href="https://github.com/raceup">
+                <i class="fa fa-github fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p>raceup</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
+        </div>
+
+        <ul class="icons" style="padding-top: 2em;">
+            <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
+            <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
+            <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
+            <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://bitbucket.org/raceuped" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+            <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Race UP | Electric Division</title>
+
+        <!-- Mobile support -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Twitter Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Material Design for Bootstrap -->
+        <link href="css/material-wfont.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        
+        <!-- custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+
+        <!-- color picker -->
+        <script src="js/piklor.js"></script>
+
+        <!-- app -->
+        <script src="js/handlers.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- icon -->
+        <link rel="icon" type="image/png" href="logo.png">
+    </head>
+
+    <body>
+        <!-- Github fork ribbon -->
+        <a href="https://github.com/raceup/rup/">
+            <img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png">
+        </a>
+
+        <header>
+            <div class="container text-left">
+                <!-- title -->
+                <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
+                
+                <!-- header -->
+                <p>Buy now an Origin-e and personalize your choice!</p>
+                <a class="btn btn-default" href="https://raceup.github.io/">
+                    <i class="fa fa-globe"></i> Team webpage
+                </a>
+                <a class="btn btn-default" href="https://github.com/raceup/rup/">
+                    <i class="fa fa-github"></i> View on GitHub
+                </a>
+                <a class="btn btn-default" href="https://raceup.github.io/contact.html">
+                    <i class="fa fa-question-circle"></i> Want to know more?
+                </a>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <article style="padding-top: 6em;">
+            <section align="center">
+                <!-- where car is seen -->
+                <div class="container">
+                  <img align="middle" id="image-canvas" src="img/choices/bcc.png" width="50%" height="auto">
+                </div>
+
+                <!-- where colors are chosen -->
+                <div class="container" style="padding-top: 2em;">
+                    <div class="col-lg-4 frame-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select frame color</button>
+                        <div class="frame-color-picker color-picker"></div>
+                    </div>
+
+                    <div class="col-lg-4 aero-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select aerodynamics color</button>
+                        <div class="aero-color-picker color-picker"></div>
+                    </div>
+
+                    <div class="col-lg-4 stickers-wrapper picker-wrapper">
+                        <button class="btn btn-default">Select stickers color</button>
+                        <div class="stickers-color-picker color-picker"></div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        
+        <footer>
+            <div class="container">
+                <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
+            </div>
+
+            <ul class="icons" style="padding-top: 2em;">
+                <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
+                <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
+                <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
+                <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
+                <li><a href="https://bitbucket.org/raceuped" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+                <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
+                <li><a href="{{ site.baseurl }}/feed.xml" class="icon circle fa-rss"><span class="label">RSS</span></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
