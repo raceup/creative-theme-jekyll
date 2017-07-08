@@ -51,50 +51,63 @@
 
 /* Footer */
 
-	.footer {
-		background: var(--color-light-background);
-		color: var(--color-dark-background);
-		padding: 5em 5em 10em 5em;
-		text-align: center;
+footer {
+	transition: background-color 0.5s ease;
+    color: white;
+    background: #303F9F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.51);
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 3em;
+}
+
+
+.footer {
+	background: var(--color-light-background);
+	color: var(--color-dark-background);
+	padding: 5em 5em 10em 5em;
+	text-align: center;
+}
+
+	.footer .copyright {
+		font-size: 0.8em;
+		line-height: 1em;
 	}
 
-		.footer .copyright {
-			font-size: 0.8em;
-			line-height: 1em;
+		.footer .copyright a {
+			color: inherit;
 		}
 
-			.footer .copyright a {
-				color: inherit;
-			}
+		.footer .copyright li {
+			display: inline-block;
+			margin-left: 1em;
+			padding-left: 1em;
+			border-left: dotted 1px;
+		}
 
-			.footer .copyright li {
-				display: inline-block;
-				margin-left: 1em;
-				padding-left: 1em;
-				border-left: dotted 1px;
+			.footer .copyright li:first-child {
+				margin: 0;
+				padding: 0;
+				border: 0;
 			}
-
-				.footer .copyright li:first-child {
-					margin: 0;
-					padding: 0;
-					border: 0;
-				}
 
 /* Icon */
 
 ul.icons {
 		cursor: default;
+		padding-top: 2em;
 	}
 
-		ul.icons li {
-			display: inline-block;
-			line-height: 1em;
-			padding-left: 0.5em;
-		}
+	ul.icons li {
+		display: inline-block;
+		line-height: 1em;
+		padding-left: 0.5em;
+	}
 
-			ul.icons li:first-child {
-				padding-left: 0;
-			}
+		ul.icons li:first-child {
+			padding-left: 0;
+		}
 
 
 .icon {
@@ -104,7 +117,6 @@ ul.icons {
 	.icon:before {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
-		font-family: FontAwesome;
 		font-style: normal;
 		font-weight: normal;
 		text-transform: none !important;

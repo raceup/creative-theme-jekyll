@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## TODO
+- Fix non-auto-hiding stickers-color-picker
+- Fix mobile navigation header
+- Add content pages
+
 ## 0.2.2 - 2017-07-08
 
 ### Added

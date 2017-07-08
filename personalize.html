@@ -14,7 +14,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/personalize.css">
+    <link rel="stylesheet" href="css/color-picker.css" type="text/css">
+
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -35,120 +40,119 @@
     <link rel="icon" type="image/png" href="logo.png">
   </head>
 
-    <body id="page-top">
-        <div class="container text-left" style="padding-top: 6em;">
-            <!-- title -->
-            <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
-            
-            <!-- header -->
-            <p>Buy now an Origin-e and personalize your choice!</p>
-            <a class="btn btn-default" href="https://raceup.github.io/">
-                <i class="fa fa-globe"></i> Team webpage
-            </a>
-            <a class="btn btn-default" href="https://github.com/raceup/rup/">
-                <i class="fa fa-github"></i> View on GitHub
-            </a>
-            <a class="btn btn-default" href="https://raceup.github.io/contact.html">
-                <i class="fa fa-question-circle"></i> Want to know more?
-            </a>
+  <body>
+    <div class="container text-left" style="padding-top: 6em;">
+        <!-- title -->
+        <h1 class="title">Race UP | Electric Division<span class="version"></span></h1>
+        
+        <!-- header -->
+        <p>Buy now an Origin-e and personalize your choice!</p>
+        <a class="btn btn-default" href="https://raceup.github.io/">
+            <i class="fa fa-globe"></i> Team webpage
+        </a>
+        <a class="btn btn-default" href="https://github.com/raceup/rup/">
+            <i class="fa fa-github"></i> View on GitHub
+        </a>
+        <a class="btn btn-default" href="https://raceup.github.io/contact.html">
+            <i class="fa fa-question-circle"></i> Want to know more?
+        </a>
+    </div>
+
+    <!-- nav -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Navigation menu -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <li><a href="mission.html">Mission</a></li>
+                                <li><a href="vision.html">Vision</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <li><a href="data.html">Data sheet</a></li>
+                                <li><a href="personalize.html">Personalize</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-item dropdown dropdown-submenu">
+                                <li><a href="track-lap.html">Track lap</a></li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="app.html">App</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <article style="padding-top: 6em;">
+        <section align="center">
+            <!-- where car is seen -->
+            <div class="container">
+              <img align="middle" id="image-canvas" src="img/choices/bcc.png" width="50%" height="auto">
+            </div>
+
+            <!-- where colors are chosen -->
+            <div class="container" style="padding-top: 2em;">
+                <div class="col-lg-4 stickers-wrapper picker-wrapper">
+                    <button class="btn btn-default">Select stickers
+                    <div class="stickers-color-picker color-picker"></div>
+                </div>
+
+                <div class="col-lg-4 frame-wrapper picker-wrapper">
+                    <button class="btn btn-default">Select frame color</button>
+                    <div class="frame-color-picker color-picker"></div>
+                </div>
+
+                <div class="col-lg-4 aero-wrapper picker-wrapper">
+                    <button class="btn btn-default">Select aerodynamics color</button>
+                    <div class="aero-color-picker color-picker"></div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
         </div>
 
-        <!-- nav -->
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-
-                <!-- Navigation menu -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="menu-item dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="menu-item dropdown dropdown-submenu">
-                                    <li><a href="mission.html">Mission</a></li>
-                                    <li><a href="vision.html">Vision</a></li>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="menu-item dropdown dropdown-submenu">
-                                    <li><a href="data.html">Data sheet</a></li>
-                                    <li><a href="personalize.html">Personalize</a></li>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="menu-item dropdown dropdown-submenu">
-                                    <li><a href="track-lap.html">Track lap</a></li>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="index.html">News</a></li>
-                        <li><a href="app.html">App</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- main content -->
-        <article style="padding-top: 6em;">
-            <section align="center">
-                <!-- where car is seen -->
-                <div class="container">
-                  <img align="middle" id="image-canvas" src="img/choices/bcc.png" width="50%" height="auto">
-                </div>
-
-                <!-- where colors are chosen -->
-                <div class="container" style="padding-top: 2em;">
-                    <div class="col-lg-4 stickers-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select stickers
-                        <div class="stickers-color-picker color-picker"></div>
-                    </div>
-
-                    <div class="col-lg-4 frame-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select frame color</button>
-                        <div class="frame-color-picker color-picker"></div>
-                    </div>
-
-                    <div class="col-lg-4 aero-wrapper picker-wrapper">
-                        <button class="btn btn-default">Select aerodynamics color</button>
-                        <div class="aero-color-picker color-picker"></div>
-                    </div>
-                </div>
-            </section>
-        </article>
-        
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> and JavaScript by the <strong><a href="https://raceup.github.io/">@Race UP</a></strong> team.
-            </div>
-
-            <ul class="icons" style="padding-top: 2em;">
-                <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
-                <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
-                <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
-                <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
-                <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
-                <li><a href="https://bitbucket.org/raceuped" class="icon circle fa-bitbucket"><span class="label">Bitbucket</span></a></li>
-                <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
-                <li><a href="{{ site.baseurl }}/feed.xml" class="icon circle fa-rss"><span class="label">RSS</span></a></li>
-            </ul>
-        </footer>
-    </body>
+        <ul class="icons">
+            <li><a href="https://twitter.com/RaceUpTeam" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://it.linkedin.com/grps/Race-Up-Team-3555234/about?" class="icon circle fa-linkedin"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://www.facebook.com/Race-UP-Team-Combustion-440618820789/" title="Combustion division" class="icon circle fa-facebook fa-facebook-cd"><span class="label">Facebook CD</span></a></li>
+            <li><a href="https://www.facebook.com/Race-UP-Team-Electric-802147286569414/" title="Electric division" class="icon circle fa-facebook fa-facebook-ed"><span class="label">Facebook ED</span></a></li>
+            <li><a href="https://www.instagram.com/race_up_team/" class="icon circle fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.youtube.com/user/teamraceup" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
+            <li><a href="https://github.com/raceup" class="icon circle fa-github"><span class="label">Github</span></a></li>
+            <li><a href="mailto:info@raceup.it" class="icon circle fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="{{ site.baseurl }}/feed.xml" class="icon circle fa-rss"><span class="label">RSS</span></a></li>
+        </ul>
+    </footer>
+  </body>
 </html>
