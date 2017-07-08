@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file.
 ### Added
 - old stylish theme landing page
 
+### Fixed
+- color pickers for car parts
+
 ## 0.2.1 - 2017-07-02
 
 ### Refactored

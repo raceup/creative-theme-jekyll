@@ -1,4 +1,4 @@
-var frameColors = {
+var stickersColors = {
     "#0000ff": "blue",
     "#00aa00": "green",
     "#00ff00": "marine",
@@ -8,19 +8,19 @@ var frameColors = {
     "#ffff00": "yellow"
 };
 
-var aeroColors = {
+var frameColors = {
     "#e1e1e1": "grey",
     "#797279": "carbon",
 };
 
-var stickersColors = {
+var aeroColors = {
     "#e1e1e1": "white",
     "#797279": "carbon",
 };
 
-var frameColor = "b";
+var stickersColor = "b";
+var frameColor = "c";
 var aeroColor = "c";
-var stickersColor = "c";
 
 window.addEventListener("load", function () {
     var pkFrame = new Piklor(".frame-color-picker",
@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
 
     pkFrame.colorChosen(function (col) {
         frameColor = frameColors[col];
-        setImageWithColors(frameColor, aeroColor, stickersColor);
+        setImageWithColors(stickersColor, frameColor, aeroColor);
     });
 
   var pkAero = new Piklor(".aero-color-picker",
@@ -44,7 +44,7 @@ window.addEventListener("load", function () {
 
     pkAero.colorChosen(function (col) {
         aeroColor = aeroColors[col];
-        setImageWithColors(frameColor, aeroColor, stickersColor);
+        setImageWithColors(stickersColor, frameColor, aeroColor);
     });
 
   var pkStickers = new Piklor(".stickers-color-picker",
@@ -56,6 +56,6 @@ window.addEventListener("load", function () {
 
     pkStickers.colorChosen(function (col) {
         stickersColor = stickersColors[col];
-        setImageWithColors(frameColor, aeroColor, stickersColor);
+        setImageWithColors(stickersColor, frameColor, aeroColor);
     });
 });
