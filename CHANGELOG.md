@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 - Fix non-auto-hiding stickers-color-picker
 - Fix mobile navigation header
 - Add content pages
+- Fox blu più blu
+- Company nav -> just it
+- Nav services -> product (personalize - datasheet)
+- Nav events -> (races - track lap)
+- App with images
+- App popup with code input direct to link to download app
+- Remove personalize > team webpage view github ...
+- Add > lap > book here
 
 ## 0.2.2 - 2017-07-08
 
