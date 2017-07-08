@@ -86,7 +86,7 @@ aside {
       background-color: black; }
   @media (min-width: 768px) {
     .navbar-default {
-      background-color: transparent;
+      background-color: white;  /* background color of navigation panel */
       border-color: rgba(255, 255, 255, 0.3); }
       .navbar-default .navbar-header .navbar-brand {
         color: rgba(255, 255, 255, 0.7); }
