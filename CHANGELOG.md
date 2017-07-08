@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 - color pickers for car parts
+- theme colors
 
 ## 0.2.1 - 2017-07-02
 
