@@ -6,10 +6,8 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation header
 - Add content pages
 - Fox blu più blu
-- Nav events -> (races - track lap)
-- App with images
+- App with images (todo screenshots)
 - App popup with code input direct to link to download app
-- Remove personalize > team webpage view github ...
 - Add > lap > book here
 
 ## 0.2.3 - 2017-07-09
