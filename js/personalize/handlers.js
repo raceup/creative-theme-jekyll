@@ -36,6 +36,13 @@ var frameColor = "c";
 var aeroColor = "c";
 
 window.addEventListener("load", function () {
+  var pkStickers = new Piklor(".stickers-color-picker",
+      Object.keys(stickersColors),
+      {
+        open: ".stickers-wrapper .btn"
+      }
+  );
+
   var pkFrame = new Piklor(".frame-color-picker",
       Object.keys(frameColors),
       {
@@ -50,37 +57,24 @@ window.addEventListener("load", function () {
       }
   );
 
-  var pkStickers = new Piklor(".stickers-color-picker",
-      Object.keys(stickersColors),
-      {
-        open: ".stickers-wrapper .btn"
-      }
-  );
-
   pkFrame.colorChosen(function (col) {
       frameColor = frameColors[col];
       setImageWithColors(stickersColor, frameColor, aeroColor);
 
-      pkFrame.close();  /* close all dialogs */
-      pkAero.close();
-      pkStickers.close();
+      pkFrame.close();
   });
 
   pkAero.colorChosen(function (col) {
       aeroColor = aeroColors[col];
       setImageWithColors(stickersColor, frameColor, aeroColor);
 
-      pkFrame.close();  /* close all dialogs */
       pkAero.close();
-      pkStickers.close();
   });
 
   pkStickers.colorChosen(function (col) {
       stickersColor = stickersColors[col];
       setImageWithColors(stickersColor, frameColor, aeroColor);
 
-      pkFrame.close();  /* close all dialogs */
-      pkAero.close();
       pkStickers.close();
   });
 });

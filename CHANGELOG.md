@@ -2,7 +2,6 @@
 All notable changes to this project will be documented in this file.
 
 ## TODO
-- Fix non-auto-hiding stickers-color-picker
 - Fix mobile navigation header
 - Add content pages
 - Fox blu più blu
