@@ -5,7 +5,6 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 - App popup with code input direct to link to download app
-- Add > lap > book here
 
 ## 0.2.3 - 2017-07-09
 
