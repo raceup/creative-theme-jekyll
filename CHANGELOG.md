@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation header
 - Add content pages
 - Fox blu più blu
-- Nav services -> product (personalize - datasheet)
 - Nav events -> (races - track lap)
 - App with images
 - App popup with code input direct to link to download app
