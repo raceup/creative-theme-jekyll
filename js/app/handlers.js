@@ -1,7 +1,6 @@
 function goToDownloadPage() {
 	window.setTimeout(function(){
-        // Move to a new location or you can do something else
-        window.location.href = "https://raceup.github.io";
+        window.location.href = "http://raceup.store.aptoide.com/app/market/org.raceup.ed.telemetry.vsm/1/24907930";
     }, 3000);
 }
 
