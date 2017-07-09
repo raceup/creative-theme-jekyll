@@ -1,102 +1,42 @@
-body {
-	font-size: 14px;
-	color: #666;
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #007FEB;
+    color: white;
 }
 
-h1 {
-	text-align: center;
-	margin-bottom: 0;
-	margin-top: 60px;
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #007FEB;
+    color: white;
 }
 
-#lean_overlay {
-	position: fixed;
-	z-index: 100;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	background: #000;
-	display: none;
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
 
-.popupContainer {
-	position: absolute;
-	width: 330px;
-	height: auto;
-	left: 45%;
-	top: 60px;
-	background: #FFF;
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
 }
 
-#modal_trigger {
-	margin: 40px auto;
-	width: 200px;
-	display: block;
-	border: 1px solid #DDD;
-	border-radius: 4px;
-}
-
-.btn {
-	padding: 10px 20px;
-	background: #F4F4F2;
-}
-
-.btn:hover {
-	background: #E4E4E2;
-}
-
-a.btn {
-	color: #666;
-	text-align: center;
-	text-decoration: none;
-}
-
-.one_half {
-	width: 50%;
-	display: block;
-	float: left;
-}
-
-/* Popup Styles*/
-
-.popupHeader {
-	font-size: 16px;
-	background: #F4F4F2;
-	position: relative;
-	padding: 10px 20px;
-	border-bottom: 1px solid #DDD;
-	font-weight: bold;
-}
-
-.popupHeader .modal_close {
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 10px 15px;
-	background: #E4E4E2;
-	cursor: pointer;
-	color: #aaa;
-	font-size: 16px;
-}
-
-.popupBody {
-	padding: 20px;
-}
-
-.centeredText {
-	text-align: center;
-	margin: 20px 0;
-	clear: both;
-	overflow: hidden;
-	text-transform: uppercase;
-}
-
-.action_btns {
-	clear: both;
-	overflow: hidden;
-}
-
-.action_btns a {
-	display: block;
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
 }

@@ -28,12 +28,13 @@
     
     <!-- Page specific -->
     <link href="css/app/popup.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="js/core/jquery.js"></script>
-    <script type="text/javascript" src="js/app/jquery.leanModal.min.js"></script>
     <script src="js/app/handlers.js"></script>
 
     <!-- icon -->
     <link rel="icon" type="image/png" href="logo.png">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   </head>
 
   <body>
@@ -79,5 +80,35 @@
       </div>
     </nav>
 
+    <section>
+      <div class="container" align="center">
+        <button id="myBtn">Download the Official app</button>
+
+        <!-- pop-up -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header" id="popupHeader">
+              <span class="close">&times;</span>
+              <h2 id="popupTitle">Enter the purchase code</h2>
+            </div>
+            
+            <div class="modal-body">
+              <br><br>
+              <input type="text" id="purchCodeIn" name="purchCode" value="XXX-XX">
+              <br><br>
+              <input type="submit" value="Verify" onclick="validate()">
+              <br><br>
+            </div>
+            
+            <div class="modal-footer" id="popupFooter">
+              <p>The <b>purchase code</b> is the one you received after buying the app.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </body>
 </html>

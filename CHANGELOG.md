@@ -4,13 +4,19 @@ All notable changes to this project will be documented in this file.
 ## TODO
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
-- App popup with code input direct to link to download app
+
+## 0.2.4 - 2017-07-09
+
+### Added
+- popup to get purchase code
+- redirection to download page
 
 ## 0.2.3 - 2017-07-09
 
 ### Added
 - app page
 - template folder
+- content pages
 
 ### Refactored
 - heads
