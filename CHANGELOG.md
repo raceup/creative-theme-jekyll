@@ -14,6 +14,15 @@ All notable changes to this project will be documented in this file.
 - Remove personalize > team webpage view github ...
 - Add > lap > book here
 
+## 0.2.3 - 2017-07-09
+
+### Added
+- app page
+- template folder
+
+### Refactored
+- heads
+
 ## 0.2.2 - 2017-07-08
 
 ### Added
