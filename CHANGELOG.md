@@ -2,9 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 ## TODO
-- Fix mobile navigation header
-- Add content pages
-- Fox blu più blu
+- Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 - App popup with code input direct to link to download app
 - Add > lap > book here
