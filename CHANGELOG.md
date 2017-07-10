@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 
+## 0.2.5 - 2017-07-10
+### Changed
+- banner image
+
 ## 0.2.4 - 2017-07-09
 
 ### Added
