@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ## 0.2.6 - 2017-07-15
 ### Fixed
 - too much space between 'company' paragraphs
+- 'book here' button in 'app' page
 
 ### Added
 - fb page head in 'news' page
