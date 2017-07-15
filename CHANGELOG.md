@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 
+## 0.2.6 - 2017-07-15
+### Fixed
+- too much space between 'company' paragraphs
+
 ## 0.2.5 - 2017-07-10
 ### Changed
 - banner image to .png
