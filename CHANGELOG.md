@@ -15,6 +15,7 @@ All notable changes to this project will be documented in this file.
 - fb page head in 'news' page
 - button to download data sheet
 - button to book a lap
+- races image in 'race' page
 
 ## 0.2.5 - 2017-07-10
 ### Changed
