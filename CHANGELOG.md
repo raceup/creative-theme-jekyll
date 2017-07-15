@@ -17,6 +17,9 @@ All notable changes to this project will be documented in this file.
 - button to book a lap
 - races image in 'race' page
 
+### Removed
+- tmp folder
+
 ## 0.2.5 - 2017-07-10
 ### Changed
 - banner image to .png
