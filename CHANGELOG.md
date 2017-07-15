@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - fb page head in 'news' page
 - button to download data sheet
+- button to book a lap
 
 ## 0.2.5 - 2017-07-10
 ### Changed
