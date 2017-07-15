@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
 
 ## 0.2.5 - 2017-07-10
 ### Changed
-- banner image
+- banner image to .png
 
 ## 0.2.4 - 2017-07-09
 
