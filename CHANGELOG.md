@@ -9,6 +9,9 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - too much space between 'company' paragraphs
 
+### Added
+- fb page head in 'news' page
+
 ## 0.2.5 - 2017-07-10
 ### Changed
 - banner image to .png
