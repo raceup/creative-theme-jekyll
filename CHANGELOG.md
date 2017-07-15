@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 - too much space between 'company' paragraphs
 - 'book here' button in 'app' page
 - image contents in main page
+- data sheet in 1 page only
 
 ### Added
 - fb page head in 'news' page
