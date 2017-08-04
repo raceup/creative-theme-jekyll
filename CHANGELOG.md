@@ -5,10 +5,14 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 
+## 0.2.7 - 2017-08-04
+### Changed
+- temporary comb wallpaper and theme
+
 ## 0.2.6 - 2017-07-15
 ### Fixed
 - too much space between 'company' paragraphs
-- 'book here' button in 'app' page
+-'book here' button in 'app' page
 - image contents in main page
 - data sheet in 1 page only
 
