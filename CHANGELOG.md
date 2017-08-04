@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ## 0.2.7 - 2017-08-04
 ### Changed
 - temporary comb wallpaper and theme
+- temporary comb red color
 
 ## 0.2.6 - 2017-07-15
 ### Fixed
