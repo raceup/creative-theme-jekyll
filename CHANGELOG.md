@@ -9,6 +9,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 - temporary comb wallpaper and theme
 - temporary comb red color
+- comb car name
 
 ## 0.2.6 - 2017-07-15
 ### Fixed
