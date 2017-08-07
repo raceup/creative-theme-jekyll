@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 - Fix mobile navigation navbar not opening
 - App with images (todo screenshots)
 
+## 0.2.8 - 2017-08-07
+### Changed
+- temporary title
+
 ## 0.2.7 - 2017-08-04
 ### Changed
 - temporary comb wallpaper and theme
